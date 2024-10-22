@@ -1,0 +1,7 @@
+site_name: Biblioteca Virtual
+repo_url: https://github.com/tu-usuario/tu-repositorio
+navbar:
+  - title: Inicio
+    path: /
+  - title: API
+    path: /api
