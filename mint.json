@@ -69,6 +69,32 @@
       "README.md": "Documentación inicial del proyecto.",
       "index.php": "Archivo para la interfaz principal de la aplicación.",
       "books/includes/conexion.php": "Conexión a la base de datos."
-    }
+    },
+    "favicon": "/resources/images/favicon.ico",
+  "colors": {
+    "primary": "#4CAF50",
+    "secondary": "#FFC107"
+  },
+  "navigation": {
+    "index": "README.md",
+    "sections": [
+      {
+        "title": "Documentación",
+        "pages": [
+          "index.php",
+          "books/includes/conexion.php"
+        ]
+      },
+      {
+        "title": "Endpoints",
+        "pages": [
+          "books/Mantenimiento/autores.php",
+          "books/Mantenimiento/editores.php",
+          "books/Mantenimiento/traductor.php",
+          "books/Mantenimiento/libros.php"
+        ]
+      }
+    ]
   }
+}
   
