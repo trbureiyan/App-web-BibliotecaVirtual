@@ -1,97 +1,56 @@
 {
+    "$schema": "https://mintlify.com/schema.json",
     "name": "Biblioteca Virtual - Aplicación Web Transaccional",
     "description": "Una aplicación web transaccional sencilla que gestiona operaciones CRUD con PHP y MySQL. Esta documentación ofrece una guía paso a paso sobre cómo configurar y desarrollar la aplicación desde cero.",
     "version": "1.1.0",
-    "authors": [
-      {
-        "name": "trbureiyan",
-        "email": "therealerokenmei@gmail.com",
-        "role": "Main dev"
-      }
-    ],
-    "repository": {
-      "url": "https://github.com/trbureiyan/App-web-BibliotecaVirtual",
-      "type": "git"
-    },
-    "setup": {
-      "dependencies": [
-        {
-          "name": "PHP",
-          "version": ">=7.4"
-        },
-        {
-          "name": "MySQL",
-          "version": ">=5.7"
-        },
-        {
-          "name": "Composer",
-          "version": "2.x"
-        }
-      ],
-      "steps": [
-        "Clona el repositorio usando Git: `git clone https://github.com/trbureiyan/App-web-BibliotecaVirtual.git`",
-        "Asegúrate de tener instalado PHP, MySQL y Composer en tu máquina.",
-        "Ejecuta `composer install` para instalar las dependencias del proyecto.",
-        "Ejecuta las migraciones iniciales para crear las tablas necesarias en la base de datos."
-      ]
-    },
-    "usage": {
-      "run": [
-        {
-          "command": "php -S localhost:8000",
-          "description": "Inicia el servidor local para probar la aplicación en un navegador."
-        }
-      ]
-    },
-    "endpoints": [
-      {
-        "method": "POST",
-        "path": "books/Mantenimiento/autores.php",
-        "description": "Agrega un nuevo autor a la base de datos mediante un formulario."
-      },
-      {
-        "method": "POST",
-        "path": "books/Mantenimiento/editores.php",
-        "description": "Agrega un nuevo editor a la base de datos mediante un formulario."
-      },
-      {
-        "method": "POST",
-        "path": "books/Mantenimiento/traductor.php",
-        "description": "Agrega un nuevo traductor a la base de datos mediante un formulario."
-      },
-      {
-        "method": "POST",
-        "path": "books/Mantenimiento/libros.php",
-        "description": "Agrega un nuevo libro a la base de datos mediante un formulario."
-      }
-    ],
-    "files": {
-      "README.md": "Documentación inicial del proyecto.",
-      "index.php": "Archivo para la interfaz principal de la aplicación.",
-      "books/includes/conexion.php": "Conexión a la base de datos."
+    
+    "logo": {
+      "dark": "/resources/images/library.svg",
+      "light": "/resources/images/icon.svg",
+      "href": "/"
     },
     "favicon": "/resources/images/favicon.png",
     "colors": {
-    "primary": "#4CAF50"
+      "primary": "#0D9373",
+      "light": "#07C983",
+      "dark": "#0D9373",
+      "background": {
+      "light": "#ffffff",
+      "dark": "#1a1a1a"
     },
-    "navigation": [
-    {
-      "section": "Documentación",
-      "pages": [
-        "README.md",
-        "index.php",
-        "books/includes/conexion.php"
-      ]
-    },
-    {
-      "section": "Endpoints",
-      "pages": [
-        "books/Mantenimiento/autores.php",
-        "books/Mantenimiento/editores.php",
-        "books/Mantenimiento/traductor.php",
-        "books/Mantenimiento/libros.php"
-      ]
+    "anchors": {
+      "from": "#0D9373",
+      "to": "#07C983"
     }
-  ]
-}
+    
+    },
+    "topbarLinks": [
+      {
+        "name": "GitHub",
+        "url": "https://github.com/trbureiyan/App-web-BibliotecaVirtual"
+      }
+    ],
+    "navigation": [
+      {
+        "group": "Get Started",
+        "pages": [
+          "introduccion",
+          "quickstart",
+          "development"
+        ]
+      },
+      {
+        "group": "Database",
+        "pages": [
+          "database/setup",
+          "database/connections"
+        ]
+      }
+    ],
+    "footerSocials": {
+      "x": "https://x.com/trbureiyan",
+      "github": "https://github.com/trbureiyan",
+      "linkedin": "https://www.linkedin.com/in/trbureiyan/"
+    }
+  }
   

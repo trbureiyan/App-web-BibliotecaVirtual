@@ -1,7 +1,9 @@
 site_name: Biblioteca Virtual
-repo_url: https://github.com/tu-usuario/tu-repositorio
+repo_url: https://github.com/trbureiyan/App-web-BibliotecaVirtual
 navbar:
   - title: Inicio
     path: /
-  - title: API
-    path: /api
+  - title: DB
+    path: /Database
+  - title: APP Mantenimiento
+    path: /Mantenimiento
