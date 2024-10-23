@@ -1,0 +1,74 @@
+{
+    "name": "Biblioteca Virtual - Aplicación Web Transaccional",
+    "description": "Una aplicación web transaccional sencilla que gestiona operaciones CRUD con PHP y MySQL. Esta documentación ofrece una guía paso a paso sobre cómo configurar y desarrollar la aplicación desde cero.",
+    "version": "1.1.0",
+    "authors": [
+      {
+        "name": "trbureiyan",
+        "email": "therealerokenmei@gmail.com",
+        "role": "Main dev"
+      }
+    ],
+    "repository": {
+      "url": "https://github.com/trbureiyan/App-web-BibliotecaVirtual",
+      "type": "git"
+    },
+    "setup": {
+      "dependencies": [
+        {
+          "name": "PHP",
+          "version": ">=7.4"
+        },
+        {
+          "name": "MySQL",
+          "version": ">=5.7"
+        },
+        {
+          "name": "Composer",
+          "version": "2.x"
+        }
+      ],
+      "steps": [
+        "Clona el repositorio usando Git: `git clone https://github.com/trbureiyan/App-web-BibliotecaVirtual.git`",
+        "Asegúrate de tener instalado PHP, MySQL y Composer en tu máquina.",
+        "Ejecuta `composer install` para instalar las dependencias del proyecto.",
+        "Ejecuta las migraciones iniciales para crear las tablas necesarias en la base de datos."
+      ]
+    },
+    "usage": {
+      "run": [
+        {
+          "command": "php -S localhost:8000",
+          "description": "Inicia el servidor local para probar la aplicación en un navegador."
+        }
+      ]
+    },
+    "endpoints": [
+      {
+        "method": "POST",
+        "path": "books/Mantenimiento/autores.php",
+        "description": "Agrega un nuevo autor a la base de datos mediante un formulario."
+      },
+      {
+        "method": "POST",
+        "path": "books/Mantenimiento/editores.php",
+        "description": "Agrega un nuevo editor a la base de datos mediante un formulario."
+      },
+      {
+        "method": "POST",
+        "path": "books/Mantenimiento/traductor.php",
+        "description": "Agrega un nuevo traductor a la base de datos mediante un formulario."
+      },
+      {
+        "method": "POST",
+        "path": "books/Mantenimiento/libros.php",
+        "description": "Agrega un nuevo libro a la base de datos mediante un formulario."
+      }
+    ],
+    "files": {
+      "README.md": "Documentación inicial del proyecto.",
+      "index.php": "Archivo para la interfaz principal de la aplicación.",
+      "books/includes/conexion.php": "Conexión a la base de datos."
+    }
+  }
+  
