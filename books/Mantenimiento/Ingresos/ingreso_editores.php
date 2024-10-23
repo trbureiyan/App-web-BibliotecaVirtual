@@ -3,16 +3,11 @@
 /**
  * Pagina de ingreso de autor y conexion a la base de datos
  * @author @trbureiyan
- * @version 1.2 // asegurado contra sql injection
+ * @version 1.3 // asegurado contra sql injection
  */
 
     //realizamos una conexion al servidor
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "libros";
-    
-    $conn = mysqli_connect($servername, $username, $password, $dbname);
+    include "../../includes/conexion.php";
 
     // Verificamos si hay conexión
     if($conn->connect_error){

@@ -2,7 +2,7 @@
 /**
  * Pagina principal para agregar datos de un libro
  * @author @trbureiyan
- * @version 1.2
+ * @version 1.3
  */
 
 include "../includes/conexion.php";

@@ -1,28 +1,25 @@
 <?php
 
 /**
- * Pagina de ingreso de autor y conexion a la base de datos
- * @author @trbureiyan & Miller Cercera Garcia
+ * Pagina de ingreso de libros y conexion a la base de datos
+ * @author @trbureiyan
  * @version 1.2 // asegurado contra sql injection
  */
 
     //realizamos una conexion al servidor
     include "../../includes/conexion.php";
 
-    // Verificamos si hay conexión
-    if($conn->connect_error){
-        die("Conexión fallida: " . $conn->connect_error);
-    }
-
     // Declaramos las variables que se utilizarán para insertar los datos en la tabla
-    $Nombre     = $_POST['Nombre'];
-    $Apellidos  = $_POST['Apellidos'];
-    $telefono   = $_POST['telefono'];
-    $correo     = $_POST['correo'];
+    $Titulo        = $_POST['Titulo'];
+    $Tipo          = $_POST['Tipo'];
+    $genero        = $_POST['genero'];
+    $ID_autor      = $_POST['ID_autor'];
+    $ID_editor     = $_POST['ID_editor'];
+    $ID_traductor  = $_POST['ID_traductor'];
 
     // Usamos prepared statements para evitar SQL Injection
-    $stmt = $conn->prepare("INSERT INTO autores (Nombre, Apellidos, telefono, correo) VALUES (?, ?, ?, ?)");
-    $stmt->bind_param("ssss", $Nombre, $Apellidos, $telefono, $correo);
+    $stmt = $conn->prepare("INSERT INTO libros (Titulo, Tipo, genero, ID_autor, ID_editor, ID_traductor) VALUES (?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param("ssssss", $Titulo, $Tipo, $genero, $ID_autor, $ID_editor, $ID_traductor);
 
     if($stmt->execute()) {
         echo "<p>Se grabó un registro</p>";

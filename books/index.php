@@ -4,7 +4,7 @@
  * Esta es la página principal de la aplicación
  * Proporciona un menú con enlaces a las diferentes partes de la aplicación
  * @author @trbureiyan & Miller Cercera Garcia
- * @version 1.2
+ * @version 1.2.1
  */
 ?>
 
@@ -62,6 +62,7 @@
             <li class="topmenu"><a href="Mantenimiento/autores.php?pag=mto_ef">Autores</a></li>
             <li class="topmenu"><a href="Mantenimiento/editores.php?pag=mto_ef" >Editores</a></li>
             <li class="topmenu"><a href="Mantenimiento/traductores.php?pag=mto_ef" >Traductores</a></li>
+            <li class="topmenu"><a href="Mantenimiento/libros.php?pag=mto_ef" >Libros</a></li>
 
             <!-- <li class="topmenu"><a href="pag_codeudor.php?pag=mto_ef">CODEUDOR</a></li>
             <li class="topmenu"><a href="pag_lineas.php?pag=mto_ef" >LINEAS CREDITOS</a></li>
