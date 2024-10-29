@@ -1,17 +1,9 @@
 
 # Sistema de Gestión de Biblioteca Virtual Basica (VLMSb)
 
-<p align="left" style="display: flex; justify-content: space-between; align-items: center;">
-  <a>
-    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMTMuOTY4NzU3NjI5Mzk0NTMiIGhlaWdodD0iMzUiIHZpZXdCb3g9IjAgMCAxMTMuOTY4NzU3NjI5Mzk0NTMgMzUiPjxyZWN0IHdpZHRoPSI2MC42NTYyNTM4MTQ2OTcyNjYiIGhlaWdodD0iMzUiIGZpbGw9IiM1NTU1NTUiLz48cmVjdCB4PSI2MC42NTYyNTM4MTQ2OTcyNjYiIHdpZHRoPSI1My4zMTI1MDM4MTQ2OTcyNjYiIGhlaWdodD0iMzUiIGZpbGw9IiMwODYzYjMiLz48dGV4dCB4PSIzMC4zMjgxMjY5MDczNDg2MzMiIHk9IjIxLjUiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtZmFtaWx5PSInUm9ib3RvJywgc2Fucy1zZXJpZiIgZmlsbD0iI0ZGRkZGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgbGV0dGVyLXNwYWNpbmc9IjIiPlVTRVM8L3RleHQ+PHRleHQgeD0iODcuMzEyNTA1NzIyMDQ1OSIgeT0iMjEuNSIgZm9udC1zaXplPSIxMiIgZm9udC1mYW1pbHk9IidNb250c2VycmF0Jywgc2Fucy1zZXJpZiIgZmlsbD0iI2VjZWZmMSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC13ZWlnaHQ9IjkwMCIgbGV0dGVyLXNwYWNpbmc9IjIiPlBIUDwvdGV4dD48L3N2Zz4=" />
-  </a>
-  <a>
-    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxODMuNjI1MDM4MTQ2OTcyNjYiIGhlaWdodD0iMzUiIHZpZXdCb3g9IjAgMCAxODMuNjI1MDM4MTQ2OTcyNjYgMzUiPjxyZWN0IHdpZHRoPSIxMDYuODQzNzcyODg4MTgzNiIgaGVpZ2h0PSIzNSIgZmlsbD0iIzU1NTU1NSIvPjxyZWN0IHg9IjEwNi44NDM3NzI4ODgxODM2IiB3aWR0aD0iNzYuNzgxMjY1MjU4Nzg5MDYiIGhlaWdodD0iMzUiIGZpbGw9IiMwMDc1OGYiLz48dGV4dCB4PSI1My40MjE4ODY0NDQwOTE4IiB5PSIyMS41IiBmb250LXNpemU9IjEyIiBmb250LWZhbWlseT0iJ1JvYm90bycsIHNhbnMtc2VyaWYiIGZpbGw9IiNGRkZGRkYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGxldHRlci1zcGFjaW5nPSIyIj5CVUlMVCBXSVRIPC90ZXh0Pjx0ZXh0IHg9IjE0NS4yMzQ0MDU1MTc1NzgxMiIgeT0iMjEuNSIgZm9udC1zaXplPSIxMiIgZm9udC1mYW1pbHk9IidNb250c2VycmF0Jywgc2Fucy1zZXJpZiIgZmlsbD0iI2ZmZmZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC13ZWlnaHQ9IjkwMCIgbGV0dGVyLXNwYWNpbmc9IjIiPk1ZU1FMPC90ZXh0Pjwvc3ZnPg==" />
-  </a>
-  <a href="https://img.shields.io">
-    <img src="https://img.shields.io/github/downloads/trbureiyan/App-web-BibliotecaVirtual/total?style=for-the-badge&color=8ac7ff" alt="GitHub Downloads (all assets, all releases)" />
-  </a>
-</p>
+| ![Badge 1](https://github.com/user-attachments/assets/4ee7973c-9dbd-42ec-8cb0-27d68999e824) | ![Badge 2](https://github.com/user-attachments/assets/0b35c9b8-b12d-4073-8efa-584f8dbdcb6f) | ![Downloads](https://img.shields.io/github/downloads/trbureiyan/App-web-BibliotecaVirtual/total?style=for-the-badge&color=8ac7ff) |
+|---|---|---|
+
 
 
 ## Descripción General
