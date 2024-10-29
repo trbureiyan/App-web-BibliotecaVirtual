@@ -4,86 +4,209 @@
  * Esta es la página principal de la aplicación
  * Proporciona un menú con enlaces a las diferentes partes de la aplicación
  * @author @trbureiyan & Miller Cercera Garcia
- * @version 1.2.1
+ * @version 1.3.4
  */
 ?>
 
 <!-- Código HTML principal de la página -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<!-- Establece el XHTML de la página -->
-
-
-<!-- Estilo que cambia y establece la fuente de la letra -->
-    <style type="text/css">
-    body {
-        font-family: 'HYWenHei-85W';
-    }
-    </style>
-
-
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Biblioteca Virtual de Libros</title> 
-<!-- Establece el título de la página como "Biblioteca Virtual de Libros" -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"; charset="iso-8859-1">
+    <title>Biblioteca Virtual de Libros</title>
+    <!-- Establece el título de la página como "Biblioteca Virtual de Libros" -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
  
-<link rel="stylesheet" href="menuindex_files/css3menu1/style.css" type="text/css" />
-<!-- Establece link a un archivo CSS para el menú -->
+    <style>
+        /* General */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('resources/images/fondo.webp') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
 
-<!-- Establece un estilo para el menú -->
-<style type="text/css">
-	/*Este es el código CSS para el fondo de la página*/
-	body { 
-		/*Establece la imagen de fondo de la página en una imagen determinada*/
-		background-image: url(resources/images/icon.svg); 
-		/*Establece la repetición de la imagen de fondo en no repetir*/
-		background-repeat: no-repeat;
-		/*Establece la posición de la imagen de fondo en centrado centrado*/
-		background-position:right center;
-		/*Establece el tamaño de la imagen de fondo en 500px por 500px*/
-		background-size:500px 500px;
-	}
-</style>
+        /* Header */
+        header {
+            background-color: rgba(52, 58, 64, 0.8);
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header img {
+            height: 40px;
+            width: 40px;
+            position: absolute;
+            left: 20px;
+        }
+        header h1 {
+            font-size: 1.8em;
+            font-weight: bold;
+            text-align: center;
+        }
 
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(73, 80, 87, 0.9);
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1em;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #6c757d;
+            border-radius: 5px;
+        }
+
+        /* Modal Menu */
+        #modalMenu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+        }
+        #modalMenuContent {
+            background-color: #f8f9fa;
+            width: 80%;
+            max-width: 500px;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        #modalMenuContent h2 {
+            color: #343a40;
+            margin-bottom: 25px;
+        }
+        .close-btn {
+            color: #343a40;
+            float: right;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+        .category-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            font-size: 1em;
+        }
+        .category-item {
+            padding: 1.5px 3.5px;
+            background: #495057;
+            color: #fff;
+            border-radius: 7px;
+            text-align: left;
+        }
+        .category-list li {
+            margin-bottom: 10px;
+            margin-top: 10px; /* Espacio entre los elementos de la lista */
+        }
+        .category-item:hover {
+            background-color: #6c757d;
+        }
+
+
+
+    </style>
 </head>
-
-<!--- Establece el bodie de la página en un estilo determinado -->
 <body>
-	<right><h1>SOFTWARE DE BOOK</h1></right>
-	<right><H2>Trabajo Practica en PHP</H2></right>
-	
-    <!--- Establece el menú de la página -->
-	<ul id="css3menu1" class="topmenu">
-    <!--<li><a href="">Inicio</a></li>-->
-    <li class="topfirst"><a href="index.php" >INICIO</a>
-	
-    <li class="topmenu">MANTENIMIENTO
+    <header>
+        <img src="resources/images/icon.svg" alt="Logo de Biblioteca Virtual">
+        <h1>Biblioteca Virtual de Libros</h1> 
+    </header>
+    <nav>
         <ul>
-            <li class="topmenu"><a href="Mantenimiento/autores.php?pag=mto_ef">Autores</a></li>
-            <li class="topmenu"><a href="Mantenimiento/editores.php?pag=mto_ef" >Editores</a></li>
-            <li class="topmenu"><a href="Mantenimiento/traductores.php?pag=mto_ef" >Traductores</a></li>
-            <li class="topmenu"><a href="Mantenimiento/libros.php?pag=mto_ef" >Libros</a></li>
+            <li><a href="#"><i class="fas fa-book"></i>Inicio</a></li>
+            <li><a href="#" onclick="showModalMenu()"><i class="fas fa-folder"></i>Categorías</a></li>
+            <li><a href="https://www.bento.me/trbureiyan"><i class="fas fa-user"></i>Perfil</a></li>
+            <li><a href="configuracion.php"><i class="fas fa-cog"></i>Configuración</a></li>
+        </ul>
+    </nav>
 
-            <!-- <li class="topmenu"><a href="pag_codeudor.php?pag=mto_ef">CODEUDOR</a></li>
-            <li class="topmenu"><a href="pag_lineas.php?pag=mto_ef" >LINEAS CREDITOS</a></li>
-            <li class="topmenu"><a href="pag_creditos.php?pag=mto_ef" >GENERAR CREDITOS</a></li>
-            <li class="topmenu"><a href="list_creditos.php?pag=mto_ef" >CREDITOS</a></li> -->
-        </ul>
-    </li>
-     <li class="topmenu">REPORTES
-        <ul>
-            <li class="topmenu"><a href="" >INFORME DE CLIENTES</a></li>
-            <li class="topmenu"><a href="" >INFORME DE CODEUDORES NO DEUDORES</a></li>
-            <li class="topmenu"><a href="" >INFORME DE CLIENTES EXCEL</a></li>
-            <li class="topmenu"><a href="" >INFORME DETALLADO</a></li>
-            <li class="topmenu">INFORME GENERAL</li>
-			<ul><li class="topmenu"><a href="">CLIENTES</a></li>
-			<li class="topmenu"><a href="">CREDITOS</a></li></ul>
-        </ul>
-    </li> 
-    </li>
-</ul>
-<br />
-	
+    <!-- Modal Menu for Categories -->
+    <div id="modalMenu">
+        <div id="modalMenuContent">
+            <span class="close-btn" onclick="hideModalMenu()">&times;</span>
+            <h2>Categorías</h2>
+            <ul class="category-list">
+                <li class="category-item"><b>Mantenimiento</b>
+                    <ul>
+                        <li><a href="Mantenimiento/Ingresos/Interfaces/autores.php" class="category-item">Autores</a></li> 
+                        <li><a href="Mantenimiento/Ingresos/Interfaces/editores.php" class="category-item">Editores</a></li>
+                        <li><a href="Mantenimiento/Ingresos/Interfaces/libros.php" class="category-item">Libros</a></li>
+                        <li><a href="Mantenimiento/Ingresos/Interfaces/traductores.php" class="category-item">Traductores</a></li>
+                        <li><a href="Mantenimiento/Eliminacion y actualizacion/Interfaces/delnupd.php" class="category-item">Eliminación y actualización</a></li>
+                    </ul>
+                </li>
+                <li class="category-item"><b>Informes</b>
+                    <ul>
+                        <li><a href="#" class="category-item">INFORME DE CLIENTES</a></li>
+                        <li><a href="#" class="category-item">INFORME DE CODEUDORES NO DEUDORES</a></li>
+                        <li><a href="#" class="category-item">INFORME DE CLIENTES EXCEL</a></li>
+                        <li><a href="#" class="category-item">INFORME DETALLADO</a></li>
+                        <li><a href="#" class="category-item">INFORME GENERAL</a></li>
+                    </ul>
+                </li>
+                <li class="category-item"><b>Vistas</b>
+                    <ul>
+                        <li><a href="#" class="category-item">CLIENTES</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('nav').classList.toggle('active');
+        }
+
+        function showModalMenu() {
+            document.getElementById('modalMenu').style.display = 'flex';
+        }
+
+        function hideModalMenu() {
+            document.getElementById('modalMenu').style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            if (event.target == document.getElementById('modalMenu')) {
+                hideModalMenu();
+            }
+        }
+    </script>
 </body>
+
 </html>

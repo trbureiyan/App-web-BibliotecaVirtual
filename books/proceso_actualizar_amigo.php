@@ -1,6 +1,6 @@
 <?php
 /**
- * @author @trbureiyan & Miller Cercera Garcia
+ * @author Miller Cercera Garcia
  * @version 1.0
  */
 

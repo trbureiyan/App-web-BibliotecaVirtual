@@ -1,13 +1,13 @@
 <?php
 
 /**
- * Pagina de ingreso de libros y conexion a la base de datos
+ * Aplicacion de ingreso de libros
  * @author @trbureiyan
- * @version 1.2 // asegurado contra sql injection
+ * @version 1.2.1 // asegurado contra sql injection
  */
 
     //realizamos una conexion al servidor
-    include "../../includes/conexion.php";
+    include "../../../includes/conexion.php";
 
     // Declaramos las variables que se utilizarán para insertar los datos en la tabla
     $Titulo        = $_POST['Titulo'];
