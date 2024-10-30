@@ -56,10 +56,10 @@ Este **Sistema de Gestión de Biblioteca Virtual** es una aplicación transaccio
 
 El proyecto está en su fase inicial, pero se planean las siguientes características y mejoras para futuras versiones:
 
-- Implementación de **funcionalidad API** para integrar operaciones completas de CRUD.
-- Capacidades de **informes y análisis de datos** para una mejor toma de decisiones y seguimiento del rendimiento.
-- ~~Interfaz grafica mas intuitiva y moderna.~~
-- Documentacion y explicaciones de la aplicación.
+<!--- - Implementación de **funcionalidad API** para integrar operaciones completas de CRUD. --->
+- [ ] Capacidades de **informes y análisis de datos** para una mejor toma de decisiones y seguimiento del rendimiento.
+- [x] ~~Interfaz grafica mas intuitiva y moderna.~~
+- [ ] Documentacion y explicaciones de la aplicación.
 
 ---
 
