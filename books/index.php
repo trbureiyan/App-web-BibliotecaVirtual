@@ -167,7 +167,8 @@
                         <li><a href="Mantenimiento/Ingresos/Interfaces/editores.php" class="category-item">Editores</a></li>
                         <li><a href="Mantenimiento/Ingresos/Interfaces/libros.php" class="category-item">Libros</a></li>
                         <li><a href="Mantenimiento/Ingresos/Interfaces/traductores.php" class="category-item">Traductores</a></li>
-                        <li><a href="Mantenimiento/Eliminacion y actualizacion/Interfaces/delnupd.php" class="category-item">Eliminación y actualización</a></li>
+                        <li><a href="Mantenimiento/Eliminacion y actualizacion/Interfaces/Eliminar.php" class="category-item">Eliminación</a></li>
+                        <li><a href="Mantenimiento/Eliminacion y actualizacion/Interfaces/Actualizar.php" class="category-item">Actualización</a></li>
                     </ul>
                 </li>
                 <li class="category-item"><b>Informes</b>
