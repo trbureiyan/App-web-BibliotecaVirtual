@@ -174,7 +174,6 @@
                 <li class="category-item"><b>Informes</b>
                     <ul>
                         <li><a href="#" class="category-item">INFORME DE CLIENTES</a></li>
-                        <li><a href="#" class="category-item">INFORME DE CODEUDORES NO DEUDORES</a></li>
                         <li><a href="#" class="category-item">INFORME DE CLIENTES EXCEL</a></li>
                         <li><a href="#" class="category-item">INFORME DETALLADO</a></li>
                         <li><a href="#" class="category-item">INFORME GENERAL</a></li>
@@ -182,7 +181,7 @@
                 </li>
                 <li class="category-item"><b>Vistas</b>
                     <ul>
-                        <li><a href="#" class="category-item">CLIENTES</a></li>
+                        <li><a href="./Vistas/Vistas.php" class="category-item">Base de datos - Tablas</a></li>
                     </ul>
                 </li>
             </ul>

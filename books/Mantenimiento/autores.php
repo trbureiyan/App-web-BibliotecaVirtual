@@ -15,7 +15,7 @@
 
 
 <!-- Estilo que cambia y establece la fuente de la letra -->
-<style type="text/css">
+<style>
     body {
         font-family: 'HYWenHei-85W';
     }
