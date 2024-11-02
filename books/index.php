@@ -6,6 +6,7 @@
  * @author @trbureiyan & Miller Cercera Garcia
  * @version 1.3.4
  */
+
 ?>
 
 <!-- Código HTML principal de la página -->
@@ -171,17 +172,16 @@
                         <li><a href="Mantenimiento/Eliminacion y actualizacion/Interfaces/Actualizar.php" class="category-item">Actualización</a></li>
                     </ul>
                 </li>
-                <li class="category-item"><b>Informes</b>
+                <li class="category-item"><b>Informes Excel XLSX</b> 
                     <ul>
-                        <li><a href="#" class="category-item">INFORME DE CLIENTES</a></li>
-                        <li><a href="#" class="category-item">INFORME DE CLIENTES EXCEL</a></li>
-                        <li><a href="#" class="category-item">INFORME DETALLADO</a></li>
-                        <li><a href="#" class="category-item">INFORME GENERAL</a></li>
+                        <li><a href="./Informes/Interfaces/InformesExcel.php" class="category-item">Informe General</a></li>
+                        <li><a href="#" class="category-item">Informe Especifico (Coming Soon)</a></li>
+                        <li><a href="#" class="category-item">Informe Dinamico  (Coming Soon)</a></li>
                     </ul>
                 </li>
                 <li class="category-item"><b>Vistas</b>
                     <ul>
-                        <li><a href="./Vistas/Vistas.php" class="category-item">Base de datos - Tablas</a></li>
+                        <li><a href="./Vistas/Vistas.php" class="category-item">Listado de base de datos - Tablas</a></li>
                     </ul>
                 </li>
             </ul>
