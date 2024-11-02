@@ -5,10 +5,9 @@
 |---|---|---|
 
 
-
 ## Descripción General
 
-Este **Sistema de Gestión de Biblioteca Virtual** es una aplicación transaccional web basica diseñada para gestionar el catálogo de una biblioteca, permitiendo realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) de manera segura y eficiente. El sistema cuenta con un backend robusto desarrollado en **PHP** y **MySQL**, con un enfoque en la **integridad de los datos** y la **seguridad**. Al utilizar **sentencias preparadas** y código modularizado, este proyecto garantiza una experiencia fluida tanto para desarrolladores como para los usuarios finales.
+Este **Sistema de Gestión de Biblioteca Virtual** es una aplicación transaccional web basica diseñada para gestionar el catálogo de una biblioteca, permitiendo realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) de manera segura y eficiente. El sistema cuenta con un backend robusto desarrollado en **PHP** y **MySQL**, con un enfoque en la **integridad de los datos**, la **seguridad** e incorpora nuevas funcionalidades de análisis y generación de informes mediante herramientas OLAP (Procesamiento Analítico en Línea) e informes en Excel con PhpSpreadsheet. Al utilizar **sentencias preparadas** y código modularizado, este proyecto garantiza una experiencia fluida tanto para desarrolladores como para los usuarios finales y se prioriza la integridad de los datos y la seguridad mediante el uso de sentencias preparadas en consultas SQL y una arquitectura de código modular para facilitar su mantenimiento.
 
 ---
 
@@ -18,13 +17,20 @@ Este **Sistema de Gestión de Biblioteca Virtual** es una aplicación transaccio
    - Se implementaron **sentencias preparadas** en las consultas SQL para proteger contra las vulnerabilidades de **inyección SQL**. Esto asegura la integridad y seguridad de la base de datos, evitando ataques maliciosos que podrían comprometer la información sensible.
 
 ### 2. **Operaciones CRUD Eficientes**
-   - El sistema maneja de manera eficiente las operaciones **CRUD** para la gestión de los recursos de la biblioteca, incluyendo libros, autores, editores y traductores. Las transacciones en la base de datos se ejecutan de manera fluida, garantizando escalabilidad y confiabilidad del sistema.
+   - La aplicación gestiona eficazmente recursos de la biblioteca (como libros, autores, editores y traductores) mediante operaciones CRUD optimizadas, asegurando que el sistema sea escalable y confiable.
 
 ### 3. **Estructura de Código Optimizada**
    - El código está estructurado para ser **modular** y **reutilizable**. Al utilizar `include()` de PHP para manejar conexiones a la base de datos y lógica externa, el proyecto se mantiene organizado y fácil de mantener. Por ejemplo, el archivo `conexion.php` se encarga de las conexiones a la base de datos, permitiendo que otros scripts tengan código limpio y conciso.
 
 ### 4. **Retroalimentación para los Usuarios**
    - Para una mejor experiencia de usuario, el sistema proporciona retroalimentación visual y textual después de realizar operaciones, como el registro de nuevos libros. Esto incluye mensajes de éxito y error, junto con íconos relevantes (e.g., marcas de verificación para el éxito y cruces rojas para errores).
+
+### 5. Nuevas Características de Análisis OLAP e Informes en Excel con PhpSpreadsheet
+
+#### Generación de Informes en Excel con PhpSpreadsheet
+- El sistema incluye una funcionalidad de exportación de informes en formato Excel, lo que permite generar reportes de los datos de la biblioteca.
+- Los informes son fáciles de manipular y permiten a los administradores de la biblioteca realizar un análisis más detallado, con tablas y gráficos integrados para una mejor toma de decisiones.
+- Esta funcionalidad facilita el seguimiento de tendencias, optimización del inventario y gestión de recursos.
 
 ---
 
@@ -56,8 +62,8 @@ Este **Sistema de Gestión de Biblioteca Virtual** es una aplicación transaccio
 
 El proyecto está en su fase inicial, pero se planean las siguientes características y mejoras para futuras versiones:
 
-<!--- - Implementación de **funcionalidad API** para integrar operaciones completas de CRUD. --->
-- [ ] Capacidades de **informes y análisis de datos** para una mejor toma de decisiones y seguimiento del rendimiento.
+<!--- - Implementación de **funcionalidades API** para integrar operaciones completas de CRUD. --->
+- [x] Capacidades de **informes y análisis de datos** para una mejor toma de decisiones y seguimiento del rendimiento.
 - [x] ~~Interfaz grafica mas intuitiva y moderna.~~
 - [ ] Documentacion y explicaciones de la aplicación.
 
